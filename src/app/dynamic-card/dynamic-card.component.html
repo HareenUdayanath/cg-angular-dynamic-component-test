@@ -1,0 +1,22 @@
+<p>
+  dynamic-card works!
+</p>
+
+<div class="row">
+  <div *ngFor = "let model of models; let i = index" class="{{model.style}}">
+    <div >
+      <p>model.component</p>
+      <div #container id="{{i}}"></div>
+    </div>
+  </div>
+</div>
+
+<ul>
+   <li *ngFor="let model of models" #linkRef></li>
+</ul>
+
+<div #container_0></div>
+<div #container_1></div>
+<div #container_2></div>
+
+
