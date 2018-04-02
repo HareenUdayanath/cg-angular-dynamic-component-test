@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { DynamicModel } from './dynamic.model';
+import {Component, OnInit} from '@angular/core';
+import {DynamicModel} from './dynamic-card/dynamic.model';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,21 @@ import { DynamicModel } from './dynamic.model';
 export class AppComponent implements OnInit {
   title = 'app';
   models: Array<DynamicModel> = [];
+
   ngOnInit() {
+    // let model = new DynamicModel();
+    // model.style = "col-sm-4";
+    // model.component = "Test";
+    // this.models.push(model);
+    // this.models.push(model);
+    // this.models.push(model);
+
     let model = new DynamicModel();
-    model.style = "col-sm-4";
+    model.style = "col-sm-6";
     model.component = "Test";
-     this.models.push(model);
-     this.models.push(model);
-     this.models.push(model);
+    this.models.push(model);
+    this.models.push(model);
+
 
   }
 }
