@@ -5,7 +5,7 @@
 <div class="row">
   <div *ngFor = "let model of models; let i = index" class="{{model.style}}">
     <div >
-      <div #container id="{{i}}"></div>
+      <div #container id="{{model.id}}"></div>
     </div>
   </div>
 </div>

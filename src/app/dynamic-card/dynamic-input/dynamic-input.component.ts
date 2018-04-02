@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {InputModel} from './input.model';
 
 @Component({
   selector: 'app-dynamic-input',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DynamicInputComponent implements OnInit {
 
-  constructor() { }
+  @Input() inputModel: InputModel;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  onKey(event) {
+    console.log('key', event);
+    this.inputModel.value = event;
   }
 
 }

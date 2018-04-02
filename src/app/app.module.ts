@@ -29,7 +29,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   providers: [],
   entryComponents: [
     TestComponent,
-    DynamicInputComponent
+    DynamicInputComponent,
+    DynamicLabelComponent
   ],
   bootstrap: [AppComponent]
 })
